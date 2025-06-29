@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="samuel rudas">
+    <meta name="silmatec" content="Diseño y desarrollo de aplicaciones web">
+    <title>Soluciones Web Efectivas</title>
+    <link rel="preload" href="./normalize.css">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="preload" href="./style.css" as="style">
+    <link rel="stylesheet" href="./style.css" as="style">
+    <link rel="preload" href="./responsive.css" as="style">
+    <link rel="stylesheet" href="./responsive.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="encabezado ">
+    <h1 class="titulo">Silmatec</h1>
+  </header>
+
+  <nav class="barra-navegacion contenedor">
+    <a class="navegacion-enlace" href="#">Inicio</a>
+    <a class="navegacion-enlace" href="#">Nosotros</a>
+    <a class="navegacion-enlace" href="#">Servicios</a>
+    <a class="navegacion-enlace" href="#">Contáctanos</a>
+  </nav>
+
+  <section class="hero">
+    <div class="contenido-hero">
+      <h2 >Diseño y Desarrollo Web a tu Alcance</h2>
+    </div>
+  </section>
+
+  <main class="principal"> 
+
+  <div class="servicios">
+      <!-- desarrollo web -->
+        <section class="contenedor-tarjeta">
+          <div class="tarjeta">
+            <div class="imagen">
+              <img src="images/DiseñoWeb.jpg" alt="img-diseñoweb">
+
+              <div class="imagen-subtitulo">
+                <h3>Diseño Web</h3>
+              </div>
+            </div>
+
+          <div class="contenido-tarjeta">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero ratione officia consequuntur magnam quo nemo ea architecto doloribus inventore. Repellat quaerat, consequatur dolorem aspernatur maiores placeat iste odio nam 
+              </p>
+
+              <div class="imagen-subtitulo">
+                <h3>Ver más</h3>
+              </div>
+          </div>
+        </div>
+      </section>
+      <!-- fin desarrollo web -->
+
+      <!-- aplicaciones mobiles -->
+      <section class="contenedor-tarjeta">
+          <div class="tarjeta">
+            <div class="imagen">
+              <img src="images/DiseñoApps.jpg" alt="img-diseñoweb">
+
+              <div class="imagen-subtitulo">
+                <h3>Aplicaciones Web</h3>
+              </div>
+            </div>
+
+          <div class="contenido-tarjeta">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero ratione officia consequuntur magnam quo nemo ea architecto doloribus inventore. Repellat quaerat, consequatur dolorem aspernatur maiores placeat iste odio nam 
+              </p>
+
+              <div class="imagen-subtitulo">
+                <h3>Ver más</h3>
+              </div>
+          </div>
+        </div>
+      </section>
+      <!-- fin de aplicaciones mobiles -->
+       
+      <!-- e-commerce -->
+      <section class="contenedor-tarjeta">
+          <div class="tarjeta">
+            <div class="imagen">
+              <img src="images/ECommerce.jpg" alt="img-diseñoweb">
+
+              <div class="imagen-subtitulo">
+                <h3>E Commerce</h3>
+              </div>
+            </div>
+
+          <div class="contenido-tarjeta">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero ratione officia consequuntur magnam quo nemo ea architecto doloribus inventore. Repellat quaerat, consequatur dolorem aspernatur maiores placeat iste odio nam 
+              </p>
+
+              <div class="imagen-subtitulo">
+                <h3>Ver más</h3>
+              </div>
+          </div>
+        </div>
+      </section>
+       <!-- fin e-commerce -->
+ </div>
+  
+
+        <!-- aside para comentarios -->
+
+    <aside>
+      <h2>Comentarios</h2>
+      
+      <span class="stars"> ⭐⭐⭐⭐⭐</span>
+      <h3>Cases Pandora</h3>
+      
+      <p>
+        Recomendado 100%, me ayudaron a crear mi tienda virtual de tecnologia
+      </p>
+
+      <span class="stars"> ⭐⭐⭐⭐⭐</span>
+      <h3>Friocosta SAS</h3>
+    
+      <p>
+        Silmatec, un aliado estrategico para todo lo relacionado con la página web de tu negocio y el desarrollo de aplicaciones personalizadas. 
+      </p>
+
+      <span class="stars"> ⭐⭐⭐⭐⭐</span>
+      <h3>Tommy Lee</h3>
+     
+      <p>
+        Recibi acompañamiento desde el principio, no supe exactamente que información colocar en mi página y ellos se tomaron muy enserio el entendimiento de mi negocio y hasta el dia de hoy, contamos con nuestra propia tienda virtual.
+      </p>
+
+      <span class="stars"> ⭐⭐⭐⭐⭐</span>
+      <h3>Dante Ali ghieri</h3>
+      <p>
+        Soy fotografo y diseñador grafico freelancer , y la verdad que mi experiencia con Silmatec, me ha permitido llegar a clientes que en algun momento me tardaria más por no contar con una portal web de la calidad que ellos me han ofrecio.
+      </p>
+    </aside>
+
+
+  <!-- chatbot -->
+ <button class="boton" id="chat-open" class="chat-open">
+      <h3>Chatbot!</h3>
+    </button>
+
+    <img src="./images/robot-assistant.png" width="70px" height="70px" />
+
+    <div class="chatbot" id="chatbot"  class="chatbot-hidden">
+         <div id="chat-window"> 
+
+          <div class="chatbot-container">
+              <div class="chat-controls" id="chat-controls">
+                <button  id="restore-chat">
+                  <img src="./images/maximizar-chatbot.png" width="25px" height="25px">
+                </button>
+                <button  id="minimize-chat">
+                  <img src="./images/minimizar-chatbot.png" width="25px" height="25px">
+                </button>
+
+                <button  id="borrar-chat">
+                  <img src="./images/borrar.png" width="25px" height="25px">
+                </button>
+
+                <button  id="close-chat">
+                  <img src="./images/cerrar-chatbot.png" width="25px" height="25px">
+                </button>
+              </div>
+              
+            <div class="chat-header" id="chat-header">
+              <h2>Welcome</h2>
+            </div>
+          </div>
+            <div id="chat-body">
+              <div id="message"></div>
+              <div id="message-bot"></div>
+            </div>
+
+            <div id="chat-footer">
+                <input type="text" id="user-input">
+                <button id="send-button">Enviar</button>
+            </div>
+        </div>
+  </div>
+
+
+  <!-- formulario -->
+
+      <form class="formulario">
+      <fieldset>
+        <legend>Contactanos llenando los campos a continuacion</legend>
+
+        <!-- contenedor campos -->
+        <div class="contenedor-campos">
+          <div class="campo">
+            <label >Nombre</label>
+            <input class="input-text" type="text" placeholder="Tu nombre">
+          </div>
+          <div class="campo">
+            <label>Teléfono</label>
+            <input class="input-text" type="tel" placeholder="Tu teléfono">
+          </div>
+          <div class="campo">
+            <label>Correo</label>
+            <input class="input-text" type="email" placeholder="Tu correo">
+          </div>
+          <div class="campo">
+            <label>Mensaje</label>
+            <textarea class="input-text"></textarea>
+          </div>
+          <div class="alinear-derecha flex">
+            <input class="boton w-sm-100" type="submit" value="Enviar">
+          </div>
+        </div>
+         <!-- fin de contenedor de campos -->
+      </fieldset>
+    </form>
+  <footer>
+    <div class="siguenos">
+      <h2>Siguenos en</h2>
+    </div>
+
+    <div class="contenedor-imagenes">
+      <div class="imagen-footer" id="imagen-instagram">
+        <h3 class="imagen-subtitulo">Instagram</h3>
+      </div>
+      <div class="imagen-footer" id="imagen-whatsapp">
+        <!-- <img src="./images/whatssapp.jpg" width="80px" height="80px" id="whatssapp-logo"> -->
+        <!-- <h3>whatssapp</h3>
+        <p>3003264021</p> -->
+        <h3 class="imagen-subtitulo">Whatssapp</h3>
+      </div>
+      <div class="imagen-footer" id="imagen-github">
+        <!-- <img src="./images/github.png" width="80px" height="80px" id="whatssapp-logo"> -->
+        <!-- <h3>Github</h3>
+        <p>SilmatecWebSolutions</p> -->
+         <h3 class="imagen-subtitulo">Github</h3>
+      </div>
+    </div>
+
+    <div class="navegacion-footer">
+        <h3>Home</h3>
+        <h3>About</h3>
+        <h3>Contact Us</h3>
+    </div>
+    <div class="mensaje-footer">
+      <h3>Todos los derechos reservados, Silmatec. Soluciones Web Efectivas.</h3>
+    </div>
+  </footer>
+</body>
+<script src="./script.js"></script>
+
+</html>

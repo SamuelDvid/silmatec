@@ -1,0 +1,48 @@
+/*animaciones de tarjeta: animacion de bordes*/
+
+.contenedor-tarjeta .tarjeta{
+  position: relative;
+  overflow: hidden; /*evitamos el error por desbordamiento, para que el borde (valga la redundancia) no se desborde*/
+}
+
+.contenedor-tarjeta .tarjeta::before{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, var(--violeta), var(--azul)); 
+ 
+  animation: rotar 4s linear infinite;
+  z-index: 0; /*lo usamos para colocar el efecto detras del contenido pero sobre el fondo*/
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+
+}
+
+.contenedor-tarjeta .tarjeta:hover::before{
+  opacity: 1;
+}
+
+.contenedor-tarjeta .tarjeta::after{
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 2px;
+  height: 2px;
+  background-color: var(--oscuro);
+  z-index: 2; /*El contenido quedará encima del efecto*/
+}
+
+@keyframes rotar{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}

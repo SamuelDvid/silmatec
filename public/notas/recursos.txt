@@ -1,0 +1,5 @@
+Verificacion de soporte en css
+https://caniuse.com/
+
+Css generator
+https://cssgenerator.org/box-shadow-css-generator.html
