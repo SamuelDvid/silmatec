@@ -15,7 +15,6 @@ html{
   font-family: "Roboto", sans-serif;
   font-size: 70%;
   box-sizing: border-box;
-  scroll-snap-type: y mandatory;
 }
 
 *, *:before, *:after{
@@ -164,13 +163,7 @@ h3{
   justify-content: flex-end;
 }
 
-.encabezado,
-.servicios,
-.navegacion-principal,
-.formulario{
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-}
+
 
 /*Servicios*/
 .servicios{

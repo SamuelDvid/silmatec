@@ -59,7 +59,6 @@ document.addEventListener('DOMContentLoaded', () =>{
   })
 })
 
-//queda pendiente terminar el boton de minimizar
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -75,6 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Enter') sendMessage();
   });
 
+
+
   async function sendMessage() {
     const message = userInput.value.trim();
     if (message === '') return;
@@ -84,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     userInput.value = '';
 
     try {
-      const response = await fetch('/send-message', {
+      const response = await fetch('/api/send-message', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message })

@@ -14,12 +14,7 @@ app.use(express.static('public'));
 
 //Cargar la clave
 const keyPath = path.join(__dirname, 'key.json');
-// const sessionClient = new dialogflow.SessionsClient({keyFilename:keyPath});
-const credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS_JSON);
-const sessionClient = new dialogflow.SessionsClient({
-  credentials
-});
-
+const sessionClient = new dialogflow.SessionsClient({keyFilename:keyPath});
 const projectId = require('./key.json').project_id
 
 //Ruta para procesar mensajes 
@@ -39,8 +34,6 @@ app.post('/send-message', async(req, res) => {
     },
   };
 
-
-
     try {
     const responses = await sessionClient.detectIntent(request);
     const result = responses[0].queryResult;
@@ -50,7 +43,6 @@ app.post('/send-message', async(req, res) => {
     console.error('ERROR:', error);
     res.status(500).send({ error: 'Error al comunicarse con Dialogflow' });
     }
-
 
     })
 
