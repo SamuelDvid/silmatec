@@ -14,7 +14,12 @@ app.use(express.static('public'));
 
 //Cargar la clave
 const keyPath = path.join(__dirname, 'key.json');
-const sessionClient = new dialogflow.SessionsClient({keyFilename:keyPath});
+// const sessionClient = new dialogflow.SessionsClient({keyFilename:keyPath});
+const credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS_JSON);
+const sessionClient = new dialogflow.SessionsClient({
+  credentials
+});
+
 const projectId = require('./key.json').project_id
 
 //Ruta para procesar mensajes 
