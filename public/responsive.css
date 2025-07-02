@@ -177,17 +177,17 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .contenedor-imagenes{
-    border: 2px solid white;
+    border: 2px solid black;
     display: flex;
     justify-content: center;
   }
 
   .navegacion-footer{
-    border: 2px solid white;
+    border: 2px solid black;
   }
 
   .mensaje-footer{
-    border: 2px solid white;
+    border: 2px solid black;
   }
     #imagen-instagram {
     background-image: url(./images/instagram.jpg);
