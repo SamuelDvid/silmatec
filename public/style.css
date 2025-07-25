@@ -552,6 +552,25 @@ aside{
   align-self: flex-end;
 }
 
+/*Formulario*/
+
+/*Clases creadas desde js en el que validamos nuestro formulario*/
+
+.error{
+  background-color: crimson;
+  color: var(--blanco);
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+.acierto{
+  background-color: var(--azul);
+  color: var(--blanco);
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
 
 #chat-footer {
   display: flex;
